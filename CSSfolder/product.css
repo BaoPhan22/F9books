@@ -1,0 +1,262 @@
+article {
+  width: 86.11%;
+  min-height: 500px;
+  margin: 10px auto;
+  background-color: #e5e5e5;
+  padding: 0.972% 2.443%;
+}
+body {
+  min-height: 200px;
+
+}
+.product-container {
+  width: 100%;
+  min-height: 630px;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: white;
+}
+.product-img {
+  width: 38.47%;
+  border-right: 1px solid rgba(103, 103, 103, 0.2);
+  min-height: 630px;
+}
+.main-img {
+  width: 93%;
+  margin: 15px auto;
+}
+.main-img img {
+  width: 100%;
+}
+.sub-img {
+  width: 21%;
+}
+.sub-img img {
+  width: 100%;
+  margin: 8.39%;
+}
+.product-info {
+  width: 61.53%;
+}
+.title {
+  width: 70%;
+  margin: 20px 0 0 20px;
+  height: 58px;
+}
+.title p {
+  font-size: 1.2em;
+  line-height: 29px;
+}
+.seller-info {
+  width: 42.03%;
+  height: 59px;
+  margin: 0 0 20px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.logo-seller {
+  width: 17.67%;
+}
+.logo-seller img{
+  width: 100%;
+}
+.name-seller {
+  align-self: flex-start;
+  padding-left: 10px;
+}
+.name-seller p {
+  line-height: 53px;
+}
+.product-price-box {
+  width: 60%;
+  min-height: 125px;
+  background-color: #efefef;
+  margin-left: 20px;
+  margin-right: 0;
+  padding: 0px 0 0 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 20px;
+}
+.number {
+  width: 60%;
+}
+.percent {
+  align-self: center;
+  text-align: center;
+}
+.percent p {
+  font-size: 2.5em;
+  color: red;
+}
+.product-price-box .discount-price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6em;
+  margin-top: 20px;
+}
+.product-price-box .base-price {
+  color: red;
+  text-decoration: line-through;
+  font-size: 1.1em;
+  font-style: italic;
+}
+.line {
+  width: 60%;
+  height: 1px;
+  border: 1px solid rgba(103, 103, 103, 0.2);
+  margin: 20px 0 20px 20px;
+}
+.delivery-to {
+  width: 60%;
+  margin-left: 20px;
+  min-height: 130px;
+  background-color: #ffffff;
+  height: 40px;
+  display: inline-block;
+}
+.delivery-to * {
+  width: 100%;
+}
+.address {
+  display: inline-block;
+}
+.address * {
+  width: 50%;
+}
+.address p {
+  float: left;
+  font-style: normal;
+  font-weight: 400;
+  width: 75%;
+}
+.address a {
+  float: right;
+  text-align: right;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0b74e5;
+  text-decoration: none;
+  width: 25%;
+}
+.user-address {
+  color: #0b74e5;
+  font-style: italic;
+}
+.ship-fee {
+  clear: both;
+  background-color: #efefef;
+  min-height: 65px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.ship-fee p {
+  font-size: 0.8em;
+  line-height: 2;
+}
+.amount {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left: 20px;
+}
+.amount p {
+  width: 100px;
+}
+.amount * {
+  background-color: #ffffff;
+  margin-right: 2px;
+  border-radius: 5px;
+}
+.amount input {
+  width: 45px;
+}
+.buy-chat-button {
+  margin: 20px 0 0 20px;
+  
+}
+.buy-chat-button button {
+  width: 38%;
+  background-color: #ff5c66;
+  border-radius: 15px;
+  min-height: 46px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;border: none;
+}
+@media all and (max-width: 600px) {
+  article {
+    width: 100%;
+  }
+  .product-container {
+    flex-direction: column;
+  }
+  .product-container >* {
+    width: 100%;
+  }
+  .product-img {
+    width: 100%;
+    min-height: 580px;
+    border: none;
+  }
+  .title {
+    width: 100%;
+  }
+  .title p {
+    font-size: 1em;
+  }
+  .seller-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .seller-info img {
+    width: 100%;
+  }
+  .product-price-box {
+    margin: auto;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .discount-price {
+    font-size: 1.2em !important;
+  }
+  .base-price {
+    font-size: 0.9em !important;
+  }
+  .percent p {
+    font-size: 2em;
+  }
+  .line {
+    display: none;
+  }
+  .delivery-to {
+    display: block;
+    margin: auto;
+    width: 95%;
+  }
+  .amount {
+    margin-top: 10px;
+  }
+  .buy-chat-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .buy-chat-button{
+    width: 100%;
+  }
+  .address p ,.address a{
+    font-size: 0.9em !important;
+  }
+  .amount {
+    margin-left: 20px;
+  }
+  .amount p {
+    font-size: 0.8em !important;
+    width: 80px;
+  }
+}

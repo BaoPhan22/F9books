@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSSfolder/style.css">
+    <link rel="stylesheet" href="CSSfolder/categories.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header-search">
+            <div class="logo-homepage">
+                <a href="index.html"><img src="img/logof9.png" alt=""></a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="search" placeholder="Mời nhập sản phẩm cần tìm">
+            </div>
+
+            <div class="search-button">
+                <div class="search-logo">
+                    <img src="img/Untitled design (8).png" alt="">
+                </div>
+                <button onclick="clickCounter(); setTimeout('xoa()', 3000);">Tìm kiếm</button>
+                <div id="result"></div>
+            </div>
+
+            <div class="search-infomation">
+                <a href="Login-sdt.html">
+                    <img src="img/Untitled design (4).png" alt="Thong tin">
+                    <p>Tài khoản</p>
+                </a>
+            </div>
+
+            <div class="search-cart">
+                <a href="cart.html"><img src="img/Untitled design (5).png" alt="">
+                    <p>Giỏ hàng</p>
+                </a>
+            </div>
+        </header>
+        <article>
+
+            <h3>Sách hay</h3>
+            <div class="type">
+                <a href="">Phổ biến</a>
+                <a href="">Hàng mới</a>
+                <a href="">Bán chạy</a>
+                <a href="">Giá thấp</a>
+                <a href="">Giá cao</a>
+            </div>
+            <br>
+            <hr>
+            <div class="items-container">
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/1.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Lược Sử Thế Giới – E.H. Gombrich</p>
+                        <p class="items-price">208.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/2.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Biến Động – Jared Diamond</p>
+                        <p class="items-price">319.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/3.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Súng, Vi Trùng Và Thép – Jared Diamond</p>
+                        <p class="items-price">190.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/4.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Lịch Sử Thế Giới – Nguyễn Hiến Lê</p>
+                        <p class="items-price">147.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/5.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Lịch Sử Do Thái – Paul Johnson</p>
+                        <p class="items-price">272.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/6.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Lịch Sử Thế Giới Theo Dòng Sự Kiện – Từ Thời Đồ Đá Tới Thời Hiện Đại – Jane Chisholm</p>
+                        <p class="items-price">103.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/7.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Lịch Sử Chiến Tranh – John Keegan</p>
+                        <p class="items-price">208.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/8.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">1491: Những Khám Phá Mới Về Châu Mỹ Thời Kỳ Tiền Columbus – Charles C. Mann</p>
+                        <p class="items-price">144.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/9.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">1493: Diện Mạo Tân Thế Giới Của Columbus – Charles C. Mann</p>
+                        <p class="items-price">240.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/10.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Thế Giới Cho Đến Ngày Hôm Qua – Jared Diamond</p>
+                        <p class="items-price">245.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/11.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Những Nhà Khám Phá – Lịch Sử Tri Kiến Vạn Vật Và Con Người – Daniel J. Boorstin</p>
+                        <p class="items-price">199.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/12.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Những Cuộc Chinh Phạt Của Alexander Đại Đế – Arrian</p>
+                        <p class="items-price">129.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/13.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Sách Tường Khổng Lồ Về Lịch Sử Thế Giới – Nhiều Tác Giả</p>
+                        <p class="items-price">112.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/14.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Sapiens: Lược Sử Loài Người – Yuval Noah Harari</p>
+                        <p class="items-price">299.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/15.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Những Con Đường Tơ Lụa – Peter Frankopan</p>
+                        <p class="items-price">370.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/16.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Lược Sử Vạn Vật – Bill Bryson</p>
+                        <p class="items-price">158.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/17.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Sự Trỗi Dậy Và Suy Tàn Của Đế Chế Thứ Ba – Lịch Sử Đức Quốc Xã – William L. Shirer</p>
+                        <p class="items-price">321.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/18.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Trăm năm nhìn lại – Phan Thanh Giản</p>
+                        <p class="items-price">230.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/19.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Bão táp triều Trần</p>
+                        <p class="items-price">730.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <a class="items" href="#">
+                    <div class="items-img"><img src="img/Lab2-img/sachlichsu/20.jpg" alt=""></div>
+                    <div class="items-content">
+                        <p class="items-title">Sử Việt 12 khúc tráng ca</p>
+                        <p class="items-price">79.000 đ</p>
+                        <svg width="60" height="25" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect x="0" y="0" width="60" height="25"
+                                    style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                </rect>
+                                <text x="15" y="17" font-family="Roboto" font-size="16" fill="red">-59%</text>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="more-link-parent">
+                <a href="" class="more-link">Xem thêm</a>
+            </div> -->
+        </article>
+        <footer>
+            <div class="support-customers">
+                <h4>Hỗ trợ khách hàng</h4><br>
+                <p> Hotline: 1900-6035 <br>
+                    (1000 đ/phút, 8-21h kể cả T7, CN) <br>
+        
+                    <a href="#">Các câu hỏi thường gặp<br></a>
+        
+                    <a href="#">Gửi yêu cầu hỗ trợ<br></a>
+                    <a href="#"> Hướng dẫn đặt hàng<br></a>
+                    <a href="#">Phương thức vận chuyển<br></a>
+                    <a href="#">Chính sách đổi trả<br></a>
+                    <a href="#">Hướng dẫn trả góp<br></a>
+                    <a href="#">Chính sách hàng nhập khẩu<br></a>
+                    Hỗ trợ khách hàng: hotro@F9.vn<br><br>
+        
+                    Báo lỗi bảo mật: security@F9.vn<br>
+                </p>
+            </div>
+            <div class="about-us">
+                <h4>Về F9</h4><br>
+                <p>
+                    <a href="#">Giới thiệu F9<br></a>
+                    <a href="#">Tuyển dụng<br></a>
+                    <a href="#">Chính sách bảo mật thanh toán<br></a>
+                    <a href="#">Chính sách bảo mật thông tin cá nhân<br></a>
+                    <a href="#">Chính sách giải quyết khiếu nại<br></a>
+                    <a href="#">Điều khoản sử dụng<br></a>
+                    <a href="#">Giới thiệu F9 Xu<br></a>
+                    <a href="#">Tiếp thị liên kết cùng F9<br></a>
+                    <a href="#">Bán hàng doanh nghiệp<br></a>
+                    <a href="#">Điều kiện vận chuyển<br></a>
+                </p>
+            </div>
+            <div class="coop">
+                <h4>Hợp tác và liên kết</h4><br>
+                <p>
+                    Quy chế hoạt động Sàn GDTMĐT <br>
+                    Bán hàng cùng F9 <br><br>
+        
+                    <b> Chứng nhận bởi</b>
+                    <img src="img/Untitled design (16).png" alt="">
+                </p>
+            </div>
+            <div class="payment">
+                <div class="up">
+                    <h4>Phương thức thanh toán</h4> <br>
+                    <img src="img/EFEFEF (1).png" alt="">
+                </div>
+                <!-- <div class="down">
+                    <h5>Dịch vụ giao hàng</h5>
+                    <img src="img/Untitled design (19).png" alt="">
+                </div> -->
+        
+            </div>
+            <div class="contact">
+                <h4>Kết nối với chúng tôi</h4> <br>
+                <img src="img/Untitled design (20).png" alt="">
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

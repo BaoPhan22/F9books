@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSSfolder/style.css">
+    <link rel="stylesheet" href="CSSfolder/index.css">
+    <script src="JS/clickcount.js"></script>
+    <script src="JS/slideshow.js"></script>
+</head>
+
+<body onload="setTimeout('next()', 2000);">
+    <div class="container">
+        <header id="header-search">
+            <div class="logo-homepage">
+                <a href="index.html"><img src="img/logof9.png" alt=""></a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="search" placeholder="Mời nhập sản phẩm cần tìm">
+            </div>
+
+            <div class="search-button">
+                <div class="search-logo">
+                    <img src="img/Untitled design (8).png" alt="">
+                </div>
+                <button onclick="clickCounter(); setTimeout('xoa()', 3000);">Tìm kiếm</button>
+                <div id="result"></div>
+            </div>
+
+            <div class="search-infomation">
+                <a href="Login-sdt.html">
+                    <img src="img/Untitled design (4).png" alt="Thong tin">
+                    <p>Tài khoản</p>
+                </a>
+            </div>
+
+            <div class="search-cart">
+                <a href="cart.html"><img src="img/Untitled design (5).png" alt="">
+                    <p>Giỏ hàng</p>
+                </a>
+            </div>
+        </header>
+
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="categories-truyentranh.html">Truyện tranh</a></li>
+                <li><a href="categories-sachlichsu.html">Sách lịch sử</a></li>
+                <li><a href="categories-selfhelp.html">Self-help</a></li>
+                
+            </ul>
+        </nav>
+
+        <div class="banners">
+            <div class="main-banner">
+                <img src="img/banner0.png" alt="" id="anh">
+                <button class="btn-next" onclick="next()">></button>
+                <button class="btn-prev" onclick="prev()"><</button>
+            </div>
+            <div class="sub-banner1">
+                <img src="img/banner4.png" alt="">
+            </div>
+            <div class="sub-banner2">
+                <img src="img/banner5.png" alt="">
+            </div>
+        </div>
+
+        <section class="trend">
+            <div class="title">
+                <h3>Danh mục nổi bật</h3>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/Lab2-sachdaolylamnguoi/img/sach1.jpg" alt="">
+                        <p>Đứng dậy lần nữa</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="categories-books.html">
+                        <img src="img/Lab2-img/Lab2-sachdaolylamnguoi/img/sach2.jpg" alt="">
+                        <p>Đi cùng ánh sáng</p>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/Lab2-sachdaolylamnguoi/img/sach3.jpg" alt="">
+                        <p>Vẻ đẹp của lời từ chối</p>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/Lab2-sachdaolylamnguoi/img/sach4.jpg" alt="">
+                        <p>Cuốn sách của những bí mật</p>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/Lab2-sachdaolylamnguoi/img/sach5.jpg" alt="">
+                        <p>Dám thay đổi</p>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/Lab2-sachdaolylamnguoi/img/sach6.jpg" alt="">
+                        <p>Trái tim người cha</p>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/Lab2-sachdaolylamnguoi/img/sach7.jpg" alt="">
+                        <p>Hành trình đến làng trưởng thành</p>
+                    </a>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="discount">
+            <div class="title">
+                <h3>Giảm giá sốc</h3>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/sachlichsu/1.jpg" alt="">
+                        <p class="product-name">Lược sử thế giới</p>
+                        <div class="row">
+                            <p class="price-discount">272.000 đ</p>
+                            <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <rect x="0" y="0" width="60" height="30"
+                                        style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                    </rect>
+                                    <text x="15" y="20" font-family="Roboto" font-size="16" fill="red">-15%</text>
+                                </g>
+                            </svg>
+                            <p class="price-base">320.000 đ</p>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/trueyntranh/1.jpg" alt="">
+                        <p class="product-name">Yu-Gi-Oh</p>
+                        <div class="row">
+                            <p class="price-discount">33.000 đ</p>
+                            <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <rect x="0" y="0" width="60" height="30"
+                                        style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                    </rect>
+                                    <text x="15" y="20" font-family="Roboto" font-size="16" fill="red">-5%</text>
+                                </g>
+                            </svg>
+                            <p class="price-base">35.000 đ</p>
+                            <!--49%-->
+                        </div>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <img src="img/3971e6c5711fc2a3b63034d76aacb6d5.jpg.webp" alt="">
+                        <p class="product-name">Lập trình hạnh phúc</p>
+                        <div class="row">
+                            <p class="price-discount">128.000 đ</p>
+                            <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <rect x="0" y="0" width="60" height="30"
+                                        style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                    </rect>
+                                    <text x="15" y="20" font-family="Roboto" font-size="16" fill="red">-27%</text>
+                                </g>
+                            </svg>
+                            <p class="price-base">175.000 đ</p>
+                            <!--27%-->
+                        </div>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/Lab2-sachdaolylamnguoi/img/sach14.jpg" alt="">
+                        <p class="product-name">Ngày tâm ta an Sống gió sẽ tan</p>
+                        <div class="row">
+                            <p class="price-discount">55.000 đ</p>
+                            <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <rect x="0" y="0" width="60" height="30"
+                                        style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                    </rect>
+                                    <text x="15" y="20" font-family="Roboto" font-size="16" fill="red">-37%</text>
+                                </g>
+                            </svg>
+                            <p class="price-base">87.400 đ</p>
+                            <!--37%-->
+                        </div>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="product.html">
+                        <img src="img/Lab2-img/sachlichsu/14.jpg" alt="">
+                        <p class="product-name">Sapiens Lược sử loài người</p>
+                        <div class="row">
+                            <p class="price-discount">236.000 đ</p>
+                            <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <rect x="0" y="0" width="60" height="30"
+                                        style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                    </rect>
+                                    <text x="15" y="20" font-family="Roboto"  fill="red">-5%</text>
+                                </g>
+                            </svg>
+                            <p class="price-base">249.000 đ</p>
+                            <!--6%-->
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="more-block">
+                    <a href="img/Untitled design (30).png"></a>
+                </div> -->
+            </div>
+            <!-- <div class="more">
+                <a href="#">Xem thêm</a>
+            </div> -->
+
+        </section>
+
+        <section class="foryou">
+            <div class="title">
+                <h3>Dành riêng cho bạn</h3>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/trueyntranh/18.jfif" alt="">
+                        <p class="product-name">Doraemon - Tập 1</p>
+                        <div class="row">
+                            <p class="price-discount">17.100 đ</p>
+                            <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <rect x="0" y="0" width="60" height="30"
+                                        style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                    </rect>
+                                    <text x="15" y="20" font-family="Roboto" font-size="16" fill="red">-5%</text>
+                                </g>
+                            </svg>
+                            <p class="price-base">18.000 đ</p>
+                            <!--15%-->
+                        </div>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/sachlichsu/9.jpg" alt="">
+                        <p class="product-name">1493: Diện Mạo Tân Thế Giới Của Columbus</p>
+                        <div class="row">
+                            <p class="price-discount">297.000 đ</p>
+                            <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <rect x="0" y="0" width="60" height="30"
+                                        style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                    </rect>
+                                    <text x="15" y="20" font-family="Roboto" font-size="16" fill="red">-7%</text>
+                                </g>
+                            </svg>
+                            <p class="price-base">320.000 đ</p>
+                            <!--58%-->
+                        </div>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/sachlichsu/7.jpg" alt="">
+                        <p class="product-name">
+                            Lịch Sử Chiến Tranh</p>
+                        <div class="row">
+                            <p class="price-discount">167.200 đ</p>
+                            <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <rect x="0" y="0" width="60" height="30"
+                                        style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                    </rect>
+                                    <text x="15" y="20" font-family="Roboto" font-size="16" fill="red">-20%</text>
+                                </g>
+                            </svg>
+                            <p class="price-base">209.000 đ</p>
+                            <!--46%-->
+                        </div>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/Lab2-sachdaolylamnguoi/img/sach7.jpg" alt="">
+                        <p class="product-name">Hành trình đến làng trưởng thành</p>
+                        <div class="row">
+                            <p class="price-discount">67.500 đ</p>
+                            <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <rect x="0" y="0" width="60" height="30"
+                                        style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                    </rect>
+                                    <text x="15" y="20" font-family="Roboto" font-size="16" fill="red">-10%</text>
+                                </g>
+                            </svg>
+                            <p class="price-base">75.000 đ</p>
+                            <!--29%-->
+                        </div>
+                    </a>
+
+                </div>
+                <div class="product">
+                    <a href="#">
+                        <img src="img/Lab2-img/trueyntranh/4.jpg" alt="">
+                        <p class="product-name">One-Punch Man - Tập 1</p>
+                        <div class="row">
+                            <p class="price-discount">25.000 đ</p>
+                            <svg width="60" height="30" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <rect x="0" y="0" width="60" height="30"
+                                        style="fill:#E6E6E6;stroke-width:3;stroke:rgb(215, 215, 215);">
+                                    </rect>
+                                    <text x="15" y="20" font-family="Roboto" font-size="16" fill="red">-0%</text>
+                                </g>
+                            </svg>
+                            <p class="price-base">25.000 đ</p>
+                            <!--59%-->
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="more">
+                <a href="#">Xem thêm</a>
+            </div> -->
+
+        </section>
+
+        <footer>
+            <div class="support-customers">
+                <h4>Hỗ trợ khách hàng</h4><br>
+                <p> Hotline: 1900-6035 <br>
+                    (1000 đ/phút, 8-21h kể cả T7, CN) <br>
+        
+                    <a href="#">Các câu hỏi thường gặp<br></a>
+        
+                    <a href="#">Gửi yêu cầu hỗ trợ<br></a>
+                    <a href="#"> Hướng dẫn đặt hàng<br></a>
+                    <a href="#">Phương thức vận chuyển<br></a>
+                    <a href="#">Chính sách đổi trả<br></a>
+                    <a href="#">Hướng dẫn trả góp<br></a>
+                    <a href="#">Chính sách hàng nhập khẩu<br></a>
+                    Hỗ trợ khách hàng: hotro@F9.vn<br><br>
+        
+                    Báo lỗi bảo mật: security@F9.vn<br>
+                </p>
+            </div>
+            <div class="about-us">
+                <h4>Về F9</h4><br>
+                <p>
+                    <a href="#">Giới thiệu F9<br></a>
+                    <a href="#">Tuyển dụng<br></a>
+                    <a href="#">Chính sách bảo mật thanh toán<br></a>
+                    <a href="#">Chính sách bảo mật thông tin cá nhân<br></a>
+                    <a href="#">Chính sách giải quyết khiếu nại<br></a>
+                    <a href="#">Điều khoản sử dụng<br></a>
+                    <a href="#">Giới thiệu F9 Xu<br></a>
+                    <a href="#">Tiếp thị liên kết cùng F9<br></a>
+                    <a href="#">Bán hàng doanh nghiệp<br></a>
+                    <a href="#">Điều kiện vận chuyển<br></a>
+                </p>
+            </div>
+            <div class="coop">
+                <h4>Hợp tác và liên kết</h4><br>
+                <p>
+                    Quy chế hoạt động Sàn GDTMĐT <br>
+                    Bán hàng cùng F9 <br><br>
+        
+                    <b> Chứng nhận bởi</b>
+                    <img src="img/Untitled design (16).png" alt="">
+                </p>
+            </div>
+            <div class="payment">
+                <div class="up">
+                    <h4>Phương thức thanh toán</h4> <br>
+                    <img src="img/EFEFEF (1).png" alt="">
+                </div>
+                <!-- <div class="down">
+                    <h5>Dịch vụ giao hàng</h5>
+                    <img src="img/Untitled design (19).png" alt="">
+                </div> -->
+        
+            </div>
+            <div class="contact">
+                <h4>Kết nối với chúng tôi</h4> <br>
+                <img src="img/Untitled design (20).png" alt="">
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

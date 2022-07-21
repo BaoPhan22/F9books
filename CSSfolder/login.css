@@ -1,0 +1,87 @@
+article {
+  width: 40%;
+  min-height: 500px;
+  background-color: #fff;
+  margin: 28px auto;
+}
+body {
+  font-family: "Roboto";
+  min-height: 900px;
+}
+.content {
+  text-align: center;
+  padding-top: 94px;
+}
+.content * {
+  display: block;
+}
+h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+}
+h6 {
+  margin-top: 19px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+.input-button {
+  width: 100%;
+  display: block;
+}
+.input-button form * {
+  margin: 19px 0;
+  border: none;
+  width: 316px;
+  height: 75px;
+}
+.input-button input,.input-button select {
+  background-color: #F4F4F4;
+  padding: 0 0.94%;
+  margin: 10px auto;
+  width: 54.2%;
+}
+.input-button button {
+  background-color: #FF5C66;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #fff;
+  margin: 10px auto;
+  width: 54.2%;
+
+}
+.input-button button:hover {
+  background-color: #f92f3c;
+  color: #fff;
+}
+.content a {
+  text-decoration: none;
+  color: #0B74E5;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 23.44px;
+  margin-top: 10px;
+}
+#loi {
+  margin: auto;
+  color: black;
+}
+@media all and (max-width: 600px) {
+  article {
+    width: 100%;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  h6 {
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+  .content a {
+    font-size: 0.8em;
+  }
+  .input-button button {
+    font-size: 0.8em;;
+  }
+}
