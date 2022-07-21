@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+  max-width: 100%;
+  min-height: 2300px;
+
+  background: #e3e3e3;
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+#header-search {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #5C413F;
+}
+
+.logo-homepage a img {
+  position: absolute;
+  width: 146px;
+  height: 100px;
+  left: 66px;
+  top: 0px;
+}
+.search-bar input {
+  position: absolute;
+  width: 558px;
+  height: 38px;
+  left: 286px;
+  top: 31px;
+  border: none;
+
+  background: #fefefe;
+}
+.search-button button {
+  position: absolute;
+  width: 112px;
+  height: 38px;
+  left: 844px;
+  top: 31px;
+  border: none;
+
+  background: #0d5cb6;
+  animation-name: example;
+  animation-duration: 3s;
+  color: white;
+  border-radius: 5px;
+}
+@keyframes example {
+  from {
+    background-color: #041b36;
+  }
+  to {
+    background-color: #0d5cb6;
+    color: #fff;
+  }
+}
+.search-button button:hover {
+  background: #0651a7;
+}
+.search-logo img {
+  position: absolute;
+  width: 37px;
+  height: 74px;
+  left: 849px;
+  top: 13px;
+}
+.search-infomation a img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 1065px;
+  top: 29px;
+}
+.search-infomation p {
+  /* Tài khoản */
+
+  position: absolute;
+  width: 55px;
+  height: 15px;
+  left: 1113px;
+  top: 42px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.5px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #fefefe;
+}
+
+.search-cart a img {
+  position: absolute;
+  width: 117px;
+  height: 100px;
+  left: 1225px;
+  top: 0px;
+}
+.search-cart p {
+  position: absolute;
+  width: 51px;
+  height: 15px;
+  left: 1310px;
+  top: 42px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.5px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #fefefe;
+}
+footer {
+  width: 100%;
+  height: 370px;
+  background: #f8f8f8;
+  margin-top: 10px;
+  padding: 10px;
+}
+footer > div {
+  width: 20%;
+  float: left;
+  position: relative;
+}
+footer > div p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+.coop img {
+  position: absolute;
+  width: 100px;
+  height: 78.78px;
+  left: 0px;
+  top: 110px;
+}
+.payment img {
+  position: absolute;
+  width: 240px;
+  height: 180px;
+}
+.payment > div > h5 {
+  position: absolute;
+  top: 180px;
+}
+.down img {
+  position: absolute;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+}
+.contact img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+footer div a {
+  text-decoration: none;
+  color: #000;
+}
+.more-link {
+  text-decoration: none;
+  color: #007397;
+  font-style: italic;
+}
+.more-link-parent {
+  text-align: center;
+  margin-top: 80px;
+}
+.find-logo {
+  display: none;
+}
+#result {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.6em;
+}
+@media all and (max-width: 600px) {
+  body,
+  article {
+    max-width: 100%;
+  }
+  .logo-homepage a img {
+    position: absolute;
+    left: 0%;
+  }
+  .search-bar input,
+  #nav-menu {
+    display: none;
+  }
+  #header-search button {
+    left: 160px;
+  }
+  .search-infomation a img {
+    left: 300px;
+  }
+  .search-infomation p,
+  .search-cart p {
+    display: none;
+  }
+  .search-cart a img {
+    left: 370px;
+  }
+  .search-logo img {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    min-height: 1050px;
+  }
+  footer div {
+    width: 50%;
+    height: 320px;
+  }
+  .payment .up img {
+    width: 80%;
+    top: 60px;
+  }
+  .payment > div > h5 {
+    top: 240px;
+  }
+  .payment .down img {
+    top: 240px;
+  }
+}
